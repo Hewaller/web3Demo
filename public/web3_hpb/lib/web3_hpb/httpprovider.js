@@ -47,7 +47,6 @@ HttpProvider.prototype.prepareRequest = function(async) {
 
 HttpProvider.prototype.send = function(payload) {
   var request = this.prepareRequest(false);
-  console.log(request, payload);
   // debugger;
   try {
     request.send(JSON.stringify(payload));
